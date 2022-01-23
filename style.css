@@ -1,0 +1,32 @@
+.form-item {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.error-message {
+    font-size: 0.8rem;
+}
+
+.form-item input {
+    border: 2px solid black;
+}
+
+.form-item.success > input {
+    border-color: green;
+}
+
+.form-item.error > input {
+    border-color: red;
+}
+
+.form-item.error > .error-message {
+    color: red;
+    visibility: visible;
+}
+
+.error-message {
+    color: red;
+    visibility: hidden;
+}
